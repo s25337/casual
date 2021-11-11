@@ -2,6 +2,7 @@
 bool tab[100000];
 int main(){
 	int n;
+	long long int suma=0;
 	std::cin>>n;
 	for(int i=2; i*i<=n; i++){
 		
@@ -12,9 +13,10 @@ int main(){
 		//std::cout<<tab[n];
 		
 		if(tab[n]==false){
-			for(int i=0; i<=n; i++){
-				if(tab[i]==0) std::cout<<i<<"\n";
+			for(int i=2; i<=n; i++){
+				if(tab[i]==0) suma+=i;
 				
 				}
 			}
+			std::cout<<suma;
 	}

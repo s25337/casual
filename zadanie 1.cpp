@@ -1,9 +1,26 @@
 #include <iostream>
+#include <string>
+#include <vector>
 
+bool tab[30];
 int main(){
-	std::string a="2 3 5 7 11 13 17 19 23";
-	std::cout<<a;
-	std::cout<<"\n";
-	std::cout<<a;
-	
-}
+	std::string a;
+	for(int i=2; i*i<=30; i++){
+		
+		if(!tab[i]) for(int j=i*i; j<=30; j+=i){
+			tab[j]=true;
+			}
+		}
+		//std::cout<<tab[n];
+		
+
+			for(int i=2; i<=30; i++){
+				if(tab[i]==0) {
+				a += std::to_string(i);
+				a.append(" ");
+				}
+				
+				}
+			std::cout<<a<<"\n";
+			std::cout<<a<<"\n";
+	}

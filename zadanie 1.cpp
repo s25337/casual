@@ -14,7 +14,7 @@ int main(){
 		//std::cout<<tab[n];
 		
 
-			for(int i=2; i<=30; i++){
+			for(int i=2; i<=28; i++){
 				if(tab[i]==0) {
 				a += std::to_string(i);
 				a.append(" ");

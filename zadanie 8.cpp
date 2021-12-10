@@ -1,6 +1,6 @@
 #include <iostream>
 
-int skip(std::string a, int b){
+void skip(std::string a, int b){
 	int n=a.size();
 
 	for(int i=b-1;i<n;i+=b) std::cout<<a[i]<<" ";

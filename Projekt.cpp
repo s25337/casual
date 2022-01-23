@@ -238,9 +238,7 @@ int main(){
 	int sprawdz=0;
 	std::cout << "ściezka wiedzie przez pola o wartosci: \n";
 	while(ws){
-//	std::cout << stos[ws] << " ";
 	std::cout << gdzie_odwrotnie(stos[ws])<< " ";
-	sprawdz+=gdzie_odwrotnie(stos[ws]);
 	ws--;
 	
 } 
